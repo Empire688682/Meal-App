@@ -71,6 +71,7 @@ section{
 }
 .single-meal{
   max-width: 350px;
+  min-width: 200px;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 9px;
@@ -106,6 +107,10 @@ section{
 .single-meal-footer .like-btn:hover{
   transform: translateY(-5px);
   color: green;
+}
+
+@media(max-width:) {
+  
 }
 /* MODAL*/
 .modal-container{
