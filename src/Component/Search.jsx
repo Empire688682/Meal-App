@@ -28,7 +28,7 @@ const Search = () => {
     <section>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='Enter Fav Meal' value={text} onChange={handleOnchange}/>
+            <input type="text" placeholder='Enter Your Meal' value={text} onChange={handleOnchange}/>
             <button type='submit' className='btn'>Search</button>
             <button className='sup-btn' onClick={handleFetchRandomMeals}>Suprise Me!</button>
         </form>
