@@ -71,7 +71,6 @@ section{
 }
 .single-meal{
   max-width: 350px;
-  min-width: 200px;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 9px;
@@ -109,8 +108,11 @@ section{
   color: green;
 }
 
-@media(max-width:) {
-  
+@media(max-width:800px) {
+  .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 /* MODAL*/
 .modal-container{
