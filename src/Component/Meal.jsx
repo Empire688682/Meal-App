@@ -3,7 +3,7 @@ import { useGlobalContext } from '../Context';
 import { BsHandThumbsUp } from "react-icons/bs";
 
 const Meal = () => {
-    const {meals, loading, handleselectedMeal} = useGlobalContext();
+    const {meals, loading, handleSelectedMeal, addToFavorite} = useGlobalContext();
 
     if(loading){
         return <section>
@@ -23,10 +23,10 @@ const Meal = () => {
           const {idMeal, strMeal:title, strMealThumb:image} = singleMeals;
           // eslint-disable-next-line react/jsx-key
           return <div key={idMeal} className="single-meal">
-          <img src={image} alt="Img" onClick={() =>handleselectedMeal(idMeal, true)} />
+          <img src={image} alt="Img" onClick={() =>handleSelectedMeal(idMeal)} />
           <div className="single-meal-footer">
             <p className='title'>{title}</p>
-            <button className='like-btn'><BsHandThumbsUp/></button>
+            <button className='like-btn' onClick={()=>addToFavorite(idMeal)}><BsHandThumbsUp/></button>
           </div>
         </div>
         })}

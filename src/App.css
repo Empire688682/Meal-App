@@ -59,6 +59,49 @@ form .sup-btn:hover{
   filter: brightness(90%);
 }
 /* FAVORITE*/
+.favorite-container{
+  background-color: black;
+  padding: 20px 5%;
+  margin: 20px 20px;
+  border-radius: 9px;
+}
+.favorite-container h1{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.favorite{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+.favorite-cart{
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.favorite-cart img{
+  width: 80px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.favorite-cart button{
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .3s ease-out;
+  filter: brightness(90%);
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.favorite-cart button:hover{
+  filter: brightness(120%);
+}
 /* MEAL*/
 section{
   padding: 50px 5%;
